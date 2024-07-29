@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --text-color: #fff;
+  --bg-color: #000;
+  --main-color: #d80505;
+  --main-color02: #d80505;
+  --text-color02: #0004f8;
+
+  --h1-font: 2.6rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  background: transparent;
+  padding: 27px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+}
+.logo {
+  font-size: 33px;
+  color: var(--text-color02);
+  font-weight: 700;
+}
+span {
+  color: var(--main-color);
+}
+.barra-navegacao {
+  display: flex;
+}
+.barra-navegacao a {
+  color: var(--text-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  margin: 15px 22px;
+  transition: all 0.5s ease;
+}
+.barra-navegacao a:hover {
+  color: var(--main-color);
+}
+.h-rigth {
+  display: flex;
+  align-items: center;
+}
+.h-rigth a:first-child {
+  color: var(--text-color);
+  font-size: var(--p-font);
+  margin-right: 20px;
+}
+.h-rigth a {
+  vertical-align: middle;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-right: 18px;
+  margin-left: 5px;
+  transition: all 0.5s ease;
+}
+.h-rigth a:hover {
+  color: var(--main-color);
+  transform: translateY(-3px);
+}
+#menu-icons {
+  color: var(--text-color);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+section {
+  padding: 70px 17% 60px;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("../img/lcma.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.home-text h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--main-color);
+}
+.home-text h1 {
+  font-size: var(--h1-font);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.home-text p {
+  font-size: var(--p-font);
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffffab;
+  margin-bottom: 35px;
+}
+.search-box {
+  display: inline-block;
+  padding: 10px 10px;
+}
